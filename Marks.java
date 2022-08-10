@@ -11,29 +11,24 @@ public class Marks
 	      Scanner sc= new Scanner(System.in);
 	      System.out.println("Enter marks");
 	      score= sc.nextInt(); 
-	      String grade =null;
-	      
-	      switch(score/10) 
-	      {
-	        case 10:
-	        case 9:
-	           grade = "Amazing";
-	           break;
-	        case 8:
-	           grade = "Good";
-	           break;
-	        case 7:
-	           grade = "All right";
-	           break;
-	        default:
-	           grade = "Okay";
-	           break;
+	      if(score>=90)
+	         {
+	    	  System.out.println("amazing");
+	         }
+	      else if(score>=90&&score<=80)
+	        {
+	    	  System.out.println("good");
+	        }
+	      else if(score>=80&&score<=70)
+	        {
+	    	  System.out.println("alright");
+	        }
+	      else 
+	      {	  
+	       System.out.println("ok");
 	      }
-	      
-	      
-	      System.out.println(grade);
-	    }
-
+        }
 }
-
-
+	      
+	      
+	      
